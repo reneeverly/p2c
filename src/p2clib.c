@@ -11,6 +11,9 @@
 
 #include "p2c.h"
 
+// WREN
+#include <string.h>
+#undef bcopy
 
 #ifndef NO_TIME
 # include <time.h>

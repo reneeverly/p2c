@@ -68,15 +68,15 @@ DDEESSCCRRIIPPTTIIOONN
        lated; any others are skipped.  The output files will be named _m_o_d_u_l_e..cc
        and _m_o_d_u_l_e..hh_.  _P_2_c never translates more than one module per run.
 
-       Before        starting,        _p_2_c        reads        the         file
-       _/_U_s_e_r_s_/_s_c_h_n_e_i_d_t_/_n_o_w_/_p_2_c_/_t_e_s_t_/_p_2_c_‐_1_._2_1_a_l_p_h_a_2_/_h_o_m_e_/_p_2_c_r_c  for a number of
-       configuration parameters.  (The actual path used  on  your  system  may
-       vary.   The  −−ii  option  is  a handy way to examine this file.)  If the
-       P2CRC environment variable is set, it gives the name of a file to  read
-       instead  of  the system file; this file can start with IInncclluuddee %%HH//pp22ccrrcc
-       to include the system file.  Next, _p_2_c attempts to read the file  _p_2_c_r_c
-       in  your  directory  for  further configuration.  If this file does not
-       exist, _p_2_c looks for _._p_2_c_r_c instead.
+       Before    starting,    _p_2_c    reads     the     file     _/_U_s_e_r_s_/_r_e_n_e_e_v_‐
+       _e_r_l_y_/_r_e_p_o_s_/_p_2_c_/_h_o_m_e_/_p_2_c_r_c  for  a  number  of configuration parameters.
+       (The actual path used on your system may vary.   The  −−ii  option  is  a
+       handy  way to examine this file.)  If the P2CRC environment variable is
+       set, it gives the name of a file to read instead of  the  system  file;
+       this  file  can start with IInncclluuddee %%HH//pp22ccrrcc to include the system file.
+       Next, _p_2_c attempts to read the file _p_2_c_r_c in your directory for further
+       configuration.   If  this  file  does  not  exist, _p_2_c looks for _._p_2_c_r_c
+       instead.
 
 OOPPTTIIOONNSS
        −−oo _c_f_i_l_e
@@ -109,17 +109,15 @@ OOPPTTIIOONNSS
               configuration file to be used.
 
        −−vv     ("Vanilla.")   Do  not  read  from the system configuration file
-              _/_U_s_e_r_s_/_s_c_h_n_e_i_d_t_/_n_o_w_/_p_2_c_/_t_e_s_t_/_p_2_c_‐_1_._2_1_a_l_p_h_a_2_/_h_o_m_e_/_p_2_c_r_c_.    Since
-              some  of  the  parameters  in this file are required, your local
-              configuration file must include those parameters instead.   This
-              also  suppresses  the  file named by the P2CRC environment vari‐
-              able.
+              _/_U_s_e_r_s_/_r_e_n_e_e_v_e_r_l_y_/_r_e_p_o_s_/_p_2_c_/_h_o_m_e_/_p_2_c_r_c_.   Since  some   of   the
+              parameters  in  this file are required, your local configuration
+              file must include those  parameters  instead.   This  also  sup‐
+              presses the file named by the P2CRC environment variable.
 
        −−HH _h_o_m_e_d_i_r
-              Use               _h_o_m_e_d_i_r               instead               of
-              _/_U_s_e_r_s_/_s_c_h_n_e_i_d_t_/_n_o_w_/_p_2_c_/_t_e_s_t_/_p_2_c_‐_1_._2_1_a_l_p_h_a_2_/_h_o_m_e as the _p_2_c home
-              directory.  The system _p_2_c_r_c file will be searched for  in  this
-              directory.
+              Use  _h_o_m_e_d_i_r  instead of _/_U_s_e_r_s_/_r_e_n_e_e_v_e_r_l_y_/_r_e_p_o_s_/_p_2_c_/_h_o_m_e as the
+              _p_2_c home directory.  The system _p_2_c_r_c file will be searched  for
+              in this directory.
 
        −−II_p_a_t_t_e_r_n
               Add  _p_a_t_t_e_r_n to the IImmppoorrttDDiirr search list of places to find mod‐
@@ -130,10 +128,10 @@ OOPPTTIIOONNSS
 
        −−ii     This special option (which must be the only argument on the com‐
               mand  line  if used) simply copies the system configuration file
-              _/_U_s_e_r_s_/_s_c_h_n_e_i_d_t_/_n_o_w_/_p_2_c_/_t_e_s_t_/_p_2_c_‐_1_._2_1_a_l_p_h_a_2_/_h_o_m_e_/_p_2_c_r_c  to   the
-              standard  output  in its entirety.  (It may be used with −−HH, but
-              −−ii is most useful precisely when you don’t know the location  of
-              the home directory.)
+              _/_U_s_e_r_s_/_r_e_n_e_e_v_e_r_l_y_/_r_e_p_o_s_/_p_2_c_/_h_o_m_e_/_p_2_c_r_c to the standard output in
+              its  entirety.   (It  may be used with −−HH, but −−ii is most useful
+              precisely when you don’t know the location of  the  home  direc‐
+              tory.)
 
        −−qq     Quiet  mode.  Suppresses output of status messages during trans‐
               lation.
@@ -798,273 +796,267 @@ CCOONNFFIIGGUURRAATTIIOONN PPAARRAAMMEETTEERRSS
                       searched.   Each  entry  in  the  path may contain a _%_s_,
                       which expands to the name of the  module.   The  default
                       path  looks for _%_s_._p_a_s and _%_s_._t_e_x_t in the current direc‐
-                      tory,                      then                      for
-                      _/_U_s_e_r_s_/_s_c_h_n_e_i_d_t_/_n_o_w_/_p_2_c_/_t_e_s_t_/_p_2_c_‐_1_._2_1_a_l_p_h_a_2_/_h_o_m_e_/_%_s_._i_m_p_.
-                      (where  /Users/schneidt/now/p2c/test/p2c‐1.21alpha2/home
-                      is the _p_2_c home directory.)
+                      tory, then for  _/_U_s_e_r_s_/_r_e_n_e_e_v_e_r_l_y_/_r_e_p_o_s_/_p_2_c_/_h_o_m_e_/_%_s_._i_m_p_.
+                      (where  /Users/reneeverly/repos/p2c/home is the _p_2_c home
+                      directory.)
 
-       SSttrruuccttFFuunnccttiioonn This  parameter  is a list of functions which follow the
-                      _p_2_c semantics for structure‐valued functions  (functions
-                      returning  arrays,  sets,  and  strings,  and structs in
-                      primitive C dialects).  For these functions,  a  pointer
-                      to  a  return‐value  area is passed to the function as a
+       SSttrruuccttFFuunnccttiioonn This parameter is a list of functions which  follow  the
+                      _p_2_c  semantics for structure‐valued functions (functions
+                      returning arrays, sets,  and  strings,  and  structs  in
+                      primitive  C  dialects).  For these functions, a pointer
+                      to a return‐value area is passed to the  function  as  a
                       special first parameter.  The function stores the result
-                      in  this area, then returns a copy of the pointer.  (The
-                      standard C function _s_t_r_c_p_y is an example  of  this  con‐
-                      cept.   _S_p_r_i_n_t_f  also behaves this way in some dialects;
-                      it always appears on the SSttrruuccttFFuunnccttiioonn list  regardless
-                      of  the  type of implementation.)  The system configura‐
+                      in this area, then returns a copy of the pointer.   (The
+                      standard  C  function  _s_t_r_c_p_y is an example of this con‐
+                      cept.  _S_p_r_i_n_t_f also behaves this way in  some  dialects;
+                      it  always appears on the SSttrruuccttFFuunnccttiioonn list regardless
+                      of the type of implementation.)  The  system  configura‐
                       tion file includes a list of common structured functions
-                      so  that  _p_2_c’s  optimizer  will  know how to manipulate
+                      so that _p_2_c’s optimizer  will  know  how  to  manipulate
                       them.
 
-       SSttrrllaappFFuunnccttiioonn Functions on  this  list  are  structured  functions  as
-                      above,  but  with the ability to work in‐place; that is,
-                      the same pointer may be passed as both the return  value
+       SSttrrllaappFFuunnccttiioonn Functions  on  this  list  are  structured  functions as
+                      above, but with the ability to work in‐place;  that  is,
+                      the  same pointer may be passed as both the return value
                       area and a regular parameter.
 
-       DDeetteerrmmiinniissttiicc  Functions  on  this  list  have  no side effects or side
-                      dependencies.  An example is the  _s_i_n  function  in  the
+       DDeetteerrmmiinniissttiicc  Functions on this list have  no  side  effects  or  side
+                      dependencies.   An  example  is  the _s_i_n function in the
                       standard math library; two calls with the same parameter
-                      values produce the same  result,  and  have  no  effects
-                      other  than returning a value.  _P_2_c can make use of this
-                      knowledge when optimizing code for efficiency  or  read‐
-                      ability.   Functions on this list are also assumed to be
+                      values  produce  the  same  result,  and have no effects
+                      other than returning a value.  _P_2_c can make use of  this
+                      knowledge  when  optimizing code for efficiency or read‐
+                      ability.  Functions on this list are also assumed to  be
                       relatively fast, so that it is acceptable to duplicate a
                       call to the function.
 
-       LLeeaavveeAAlloonnee     Functions  on  this list are not subjected to the normal
+       LLeeaavveeAAlloonnee     Functions on this list are not subjected to  the  normal
                       built‐in translation rules that _p_2_c would otherwise use.
                       For example, adding _w_r_i_t_e_l_n to this list would translate
-                      _w_r_i_t_e_l_n statements blindly into calls to a  C  _w_r_i_t_e_l_n_(_)
-                      function,  rather  than being translated into equivalent
-                      _p_r_i_n_t_f calls.  The built‐in  translation  is  also  sup‐
+                      _w_r_i_t_e_l_n  statements  blindly into calls to a C _w_r_i_t_e_l_n_(_)
+                      function, rather than being translated  into  equivalent
+                      _p_r_i_n_t_f  calls.   The  built‐in  translation is also sup‐
                       pressed if the function has a FFuunnccMMaaccrroo.
 
-       BBuuffffeerreeddFFiillee   _P_2_c  normally  assumes binary files will use _r_e_a_d_/_w_r_i_t_e_,
-                      not _g_e_t_/_p_u_t_/_^ notation.  A  file  buffer  variable  will
-                      only  be  created  for a file if buffer notation is used
-                      for it.  For global file variables this may be  detected
+       BBuuffffeerreeddFFiillee   _P_2_c normally assumes binary files will  use  _r_e_a_d_/_w_r_i_t_e_,
+                      not  _g_e_t_/_p_u_t_/_^  notation.   A  file buffer variable will
+                      only be created for a file if buffer  notation  is  used
+                      for  it.  For global file variables this may be detected
                       too late (a declaration without buffers may already have
                       been written).  Such files can be listed in BBuuffffeerreeddFFiillee
-                      to  force  _p_2_c  to allocate buffers for them; do this if
-                      you get a warning message that  says  it  is  necessary.
-                      Set  BBuuffffeerreeddFFiillee=1  to  buffer all files, in which case
-                      UUnnBBuuffffeerreeddFFiillee allows you to force certain files _n_o_t  to
+                      to force _p_2_c to allocate buffers for them;  do  this  if
+                      you  get  a  warning  message that says it is necessary.
+                      Set BBuuffffeerreeddFFiillee=1 to buffer all files,  in  which  case
+                      UUnnBBuuffffeerreeddFFiillee  allows you to force certain files _n_o_t to
                       have buffers.
 
-       SSttrruuccttFFiilleess    If  _p_2_c  still can’t translate your file operations cor‐
-                      rectly, you can set SSttrruuccttFFiilleess=1 to cause Pascal  files
+       SSttrruuccttFFiilleess    If _p_2_c still can’t translate your file  operations  cor‐
+                      rectly,  you can set SSttrruuccttFFiilleess=1 to cause Pascal files
                       to translate into structs which include the usual C _F_I_L_E
-                      pointer, as well as file buffer and  file  name  fields.
-                      While  the  resulting  code  doesn’t  look  as much like
-                      native C, the file structs will allow _p_2_c to do  a  cor‐
+                      pointer,  as  well  as file buffer and file name fields.
+                      While the resulting  code  doesn’t  look  as  much  like
+                      native  C,  the file structs will allow _p_2_c to do a cor‐
                       rect translation in many more cases.
 
        CChheecckkFFiilleeEEOOFF   Normally  only  file‐open  operations  are  checked  for
-                      errors.  Additional error checking, such  as  read‐past‐
-                      end‐of‐file,  can be enabled with parameters like CChheecckk‐‐
-                      FFiilleeEEOOFF.  These checks can make the code very ugly!   If
-                      I/O  checking is enabled by the program ($$iioocchheecckk oonn$$ in
-                      HP Pascal; {{$$II++}} in Turbo; this is  always  the  default
-                      state),  these  checks will generate fatal errors unless
-                      enclosed in an HP Pascal ttrryy‐rreeccoovveerr construct.  If  I/O
-                      checking  is disabled, these will cause the global vari‐
-                      able _P___i_o_r_e_s_u_l_t to be set zero or nonzero  according  to
-                      the  outcome.   The default for most of these options is
+                      errors.   Additional  error checking, such as read‐past‐
+                      end‐of‐file, can be enabled with parameters like  CChheecckk‐‐
+                      FFiilleeEEOOFF.   These checks can make the code very ugly!  If
+                      I/O checking is enabled by the program ($$iioocchheecckk oonn$$  in
+                      HP  Pascal;  {{$$II++}}  in Turbo; this is always the default
+                      state), these checks will generate fatal  errors  unless
+                      enclosed  in an HP Pascal ttrryy‐rreeccoovveerr construct.  If I/O
+                      checking is disabled, these will cause the global  vari‐
+                      able  _P___i_o_r_e_s_u_l_t  to be set zero or nonzero according to
+                      the outcome.  The default for most of these  options  is
                       to check only when I/O checking is enabled.
 
 IISSSSUUEESS
        IInntteeggeerr ssiizzee..  _P_2_c normally generates code to work with either 16 or 32
-       bit  ints.  If you know your C integers will be 16 or 32 bits, set IInntt‐‐
-       SSiizzee appropriately.  In particular  setting  IInnttSSiizzee=32  will  generate
+       bit ints.  If you know your C integers will be 16 or 32 bits, set  IInntt‐‐
+       SSiizzee  appropriately.   In  particular  setting IInnttSSiizzee=32 will generate
        much cleaner code: _p_2_c no longer must carefully cast function arguments
-       between int and long.  These casts also will  be  unnecessary  if  ANSI
+       between  int  and  long.   These casts also will be unnecessary if ANSI
        prototypes are available.  To disable int/long casting because you know
-       at least one of these cases will hold, set CCaassttLLoonnggAArrggss=0.   (The  CCaass‐‐
-       ttAArrggss  parameter  similarly  controls  other  types  of  casts, such as
-       between ints and doubles.)  The IInntteeggeerr1166  parameter  controls  whether
-       Pascal  integers  are  interpreted  as  16 or 32 bits, or translated as
+       at  least  one of these cases will hold, set CCaassttLLoonnggAArrggss=0.  (The CCaass‐‐
+       ttAArrggss parameter similarly  controls  other  types  of  casts,  such  as
+       between  ints  and  doubles.)  The IInntteeggeerr1166 parameter controls whether
+       Pascal integers are interpreted as 16 or  32  bits,  or  translated  as
        native C integers.  The default value depends on the LLaanngguuaaggee selected.
 
-       SSiiggnneedd//uunnssiiggnneedd  cchhaarrss..  Pascal characters are normally "weakly" inter‐
+       SSiiggnneedd//uunnssiiggnneedd cchhaarrss..  Pascal characters are normally "weakly"  inter‐
        preted as unsigned; this is controlled by UUnnssiiggnneeddCChhaarr.  The default is
-       "either,"  so that C’s native cchhaarr type may be used even if its signed‐
-       ness is unknown.  Code that uses characters outside of the range  0‐127
-       may  need  a  different  setting.  Alternatively, you can use the types
+       "either," so that C’s native cchhaarr type may be used even if its  signed‐
+       ness  is unknown.  Code that uses characters outside of the range 0‐127
+       may need a different setting.  Alternatively, you  can  use  the  types
        {{SSIIGGNNEEDD}} cchhaarr and {{UUNNSSIIGGNNEEDD}} cchhaarr in the few cases where it really mat‐
        ters.  These comments are controlled by the SSiiggnneeddCCoommmmeenntt and UUnnssiiggnneedd‐‐
-       CCoommmmeenntt parameters.  (The type {{UUNNSSIIGGNNEEDD}} iinntteeggeerr is also  recognized.)
-       The  SSiiggnneeddCChhaarr  parameter  tells  whether  C  characters are signed or
-       unsigned (default is "unknown").   The  HHaassSSiiggnneeddCChhaarr  parameter  tells
+       CCoommmmeenntt  parameters.  (The type {{UUNNSSIIGGNNEEDD}} iinntteeggeerr is also recognized.)
+       The SSiiggnneeddCChhaarr parameter tells  whether  C  characters  are  signed  or
+       unsigned  (default  is  "unknown").   The HHaassSSiiggnneeddCChhaarr parameter tells
        whether the phrase "signed char" is legal in the output.  If it is not,
        _p_2_c may have to translate Pascal signed bytes into C shorts.
 
-       SSppeecciiaall ttyyppeess..  _P_2_c understands the following  predefined  Pascal  type
+       SSppeecciiaall  ttyyppeess..   _P_2_c  understands the following predefined Pascal type
        names: iinntteeggeerr, signed integers depending on IInntteeggeerr1166; lloonnggiinntt, signed
-       32‐bit integers; uunnssiiggnneedd,  unsigned  32‐bit  integers;  sswwoorrdd,  signed
+       32‐bit  integers;  uunnssiiggnneedd,  unsigned  32‐bit  integers; sswwoorrdd, signed
        16‐bit integers; wwoorrdd, unsigned 16‐bit integers; cc__iinntt, signed native C
        integers; cc__uuiinntt, unsigned native C integers; ssbbyyttee, signed 8‐bit inte‐
-       gers;  bbyyttee,  unsigned  8‐bit  integers;  rreeaall,  floating‐point numbers
-       depending on DDoouubblleeRReeaallss; ssiinnggllee,  single‐precision  floats;  lloonnggrreeaall,
-       ddoouubbllee,  and  eexxtteennddeedd,  double‐precision  floats;  ppooiinntteerr and aannyyppttrr,
+       gers; bbyyttee,  unsigned  8‐bit  integers;  rreeaall,  floating‐point  numbers
+       depending  on  DDoouubblleeRReeaallss;  ssiinnggllee, single‐precision floats; lloonnggrreeaall,
+       ddoouubbllee, and eexxtteennddeedd,  double‐precision  floats;  ppooiinntteerr  and  aannyyppttrr,
        generic pointers (assignment‐compatible with any pointer type); ssttrriinngg,
-       generic  string of length SSttrriinnggDDeeffaauulltt (normally 255); also, the usual
-       Pascal types cchhaarr, bboooolleeaann, and tteexxtt.  (If your Pascal  uses  different
+       generic string of length SSttrriinnggDDeeffaauulltt (normally 255); also, the  usual
+       Pascal  types  cchhaarr, bboooolleeaann, and tteexxtt.  (If your Pascal uses different
        names for these concepts, the SSyynnoonnyymm option will come in handy.)
 
-       EEmmbbeeddddeedd  ccooddee..   It is possible to write a Pascal comment containing C
+       EEmmbbeeddddeedd ccooddee..  It is possible to write a Pascal comment  containing  C
        code to be embedded into the output.  See the descriptions of EEmmbbeeddCCoomm‐‐
-       mmeenntt  and its relatives in the system _p_2_c_r_c file.  These techniques are
-       helpful if you plan to do repeated translations of code that  is  still
-       being  maintained  in Pascal.  See the description of RReeppllaacceeBBeeffoorree for
+       mmeenntt and its relatives in the system _p_2_c_r_c file.  These techniques  are
+       helpful  if  you plan to do repeated translations of code that is still
+       being maintained in Pascal.  See the description of  RReeppllaacceeBBeeffoorree  for
        an example use of embedded code.
 
-       CCoommmmeennttss aanndd bbllaannkk lliinneess..  _P_2_c collects the  comments  in  a  procedure
-       into  a list.  All comments and statements are stamped with serial num‐
-       bers which are used to reattach comments to statements even after  code
-       has  been  added,  removed, or rearranged during translation.  "Orphan"
-       comments attached to statements that have been  lost  are  attached  to
-       nearby  statements or emitted at the end of the procedure.  Blank lines
+       CCoommmmeennttss  aanndd  bbllaannkk  lliinneess..   _P_2_c collects the comments in a procedure
+       into a list.  All comments and statements are stamped with serial  num‐
+       bers  which are used to reattach comments to statements even after code
+       has been added, removed, or rearranged  during  translation.   "Orphan"
+       comments  attached  to  statements  that have been lost are attached to
+       nearby statements or emitted at the end of the procedure.  Blank  lines
        are treated as a kind of comment, so _p_2_c will also reproduce your usage
-       of  blank  lines.   If the comment mechanism goes awry, you can disable
-       comments with EEaattCCoommmmeennttss or disable their being attached to code  with
+       of blank lines.  If the comment mechanism goes awry,  you  can  disable
+       comments  with EEaattCCoommmmeennttss or disable their being attached to code with
        SSppiittCCoommmmeennttss.
 
-       IInnddeennttaattiioonn..   _P_2_c  has a number of parameters to govern indentation of
-       code.  The default values produce the GNU  Emacs  standard  indentation
-       style,  although  _p_2_c can do a better job since it knows more about the
-       code it is  indenting.   Indentation  works  by  applying  "indentation
+       IInnddeennttaattiioonn..  _P_2_c has a number of parameters to govern  indentation  of
+       code.   The  default  values produce the GNU Emacs standard indentation
+       style, although _p_2_c can do a better job since it knows more  about  the
+       code  it  is  indenting.   Indentation  works  by applying "indentation
        deltas," which are either absolute numbers (which override the previous
-       indentation), or signed relative numbers (which  augment  the  previous
+       indentation),  or  signed  relative numbers (which augment the previous
        indentation).  A delta of "+0" specifies no change in indentation.  All
        of the indentation options are described in the standard _p_2_c_r_c file.
 
-       LLiinnee bbrreeaakkiinngg..  _P_2_c uses an algorithm similar to the  TeX  typesetter’s
-       paragraph  formatter  for breaking long statements into multiple lines.
-       A "penalty" is assigned to various undesirable aspects of all  possible
+       LLiinnee  bbrreeaakkiinngg..   _P_2_c uses an algorithm similar to the TeX typesetter’s
+       paragraph formatter for breaking long statements into  multiple  lines.
+       A  "penalty" is assigned to various undesirable aspects of all possible
        line breaks; the "badness" of a set of line breaks is approximately the
-       sum of all the penalties.  Chief among these are serious penalties  for
-       overrunning  the  desired  maximum line length (default 78 columns), an
-       infinite penalty for  overrunning  the  absolute  maximum  line  length
+       sum  of all the penalties.  Chief among these are serious penalties for
+       overrunning the desired maximum line length (default  78  columns),  an
+       infinite  penalty  for  overrunning  the  absolute  maximum line length
        (default 90), and progressively greater penalties for breaking at oper‐
-       ators deeply nested in expressions.  Parameters such as  OOppBBrreeaakkPPeennaallttyy
-       control  the  relative  weights of various choices.  BBrreeaakkAArriitthh and its
+       ators  deeply nested in expressions.  Parameters such as OOppBBrreeaakkPPeennaallttyy
+       control the relative weights of various choices.   BBrreeaakkAArriitthh  and  its
        neighbors control whether the operator at a line break should be placed
-       at  the  end  of the previous line or at the beginning of the next.  If
+       at the end of the previous line or at the beginning of  the  next.   If
        you don’t want any oversize lines, define MMaaxxLLiinneeWWiiddtthh=78.
 
-       Unlike TeX, _p_2_c’s line breaker must actually try all possible  sets  of
-       break  points.   To avoid excessive computation, the total penalty con‐
-       tributed at each decision point must sum to a nonnegative value;  nega‐
-       tive  values  are  clipped  up  to zero.  This allows _p_2_c to prune away
-       obviously undesirable alternatives in advance.   The  MMaaxxLLiinneeBBrreeaakkTTrriieess
-       parameter  (default  5000) controls how many alternatives to try before
+       Unlike  TeX,  _p_2_c’s line breaker must actually try all possible sets of
+       break points.  To avoid excessive computation, the total  penalty  con‐
+       tributed  at each decision point must sum to a nonnegative value; nega‐
+       tive values are clipped up to zero.  This  allows  _p_2_c  to  prune  away
+       obviously  undesirable  alternatives in advance.  The MMaaxxLLiinneeBBrreeaakkTTrriieess
+       parameter (default 5000) controls how many alternatives to  try  before
        giving up and using the best so far.
 
        PPAASSCCAALL__MMAAIINN..  _P_2_c generates a call to this function at the front of the
-       main  program.   In  the (unmodified) run‐time library all this does is
+       main program.  In the (unmodified) run‐time library all  this  does  is
        save argc and argv away because in both HP and Turbo these are accessed
-       as  global  variables.   If you do not wish to use this feature, define
-       AArrggCCNNaammee to be _a_r_g_c_, AArrggVVNNaammee to be _a_r_g_v_, and MMaaiinnNNaammee (normally  "PAS‐
-       CAL_MAIN")  to  be  blank.   This  will work if argc and argv are never
+       as global variables.  If you do not wish to use  this  feature,  define
+       AArrggCCNNaammee  to be _a_r_g_c_, AArrggVVNNaammee to be _a_r_g_v_, and MMaaiinnNNaammee (normally "PAS‐
+       CAL_MAIN") to be blank.  This will work if  argc  and  argv  are  never
        accessed outside of your main program.
 
 BBUUGGSS
-       _P_2_c was designed with the idea that  clean,  readable  output  in  most
-       cases  is  worth  more than guaranteed correct output in extreme cases.
-       _P_2_c is _n_o_t a compiler!  However,  ideally  the  "extreme"  cases  would
-       include  only  those which never arise in real life.  Thus if _p_2_c actu‐
-       ally generates incorrect code I will consider it a bug, but I will  not
-       apologize  for  it. :‐)  Below are the major remaining cases where this
+       _P_2_c  was  designed  with  the  idea that clean, readable output in most
+       cases is worth more than guaranteed correct output  in  extreme  cases.
+       _P_2_c  is  _n_o_t  a  compiler!   However, ideally the "extreme" cases would
+       include only those which never arise in real life.  Thus if  _p_2_c  actu‐
+       ally  generates incorrect code I will consider it a bug, but I will not
+       apologize for it. :‐)  Below are the major remaining cases  where  this
        is known to occur.
 
-       Certain kinds of conformant array  parameters  (including  multi‐dimen‐
-       sional  conformant  arrays)  produce code that declares variable‐length
-       arrays in C.  Only a few C compilers, such as the GNU C compiler,  sup‐
-       port  this  language  extension.  Otherwise some hand re‐coding will be
+       Certain  kinds  of  conformant array parameters (including multi‐dimen‐
+       sional conformant arrays) produce code  that  declares  variable‐length
+       arrays  in C.  Only a few C compilers, such as the GNU C compiler, sup‐
+       port this language extension.  Otherwise some hand  re‐coding  will  be
        required.
 
-       HP Pascal ttrryy‐rreeccoovveerr structures are translated into calls to  _T_R_Y  and
-       _R_E_C_O_V_E_R  macros,  which  are  defined  to  simulate the construct using
+       HP  Pascal  ttrryy‐rreeccoovveerr structures are translated into calls to _T_R_Y and
+       _R_E_C_O_V_E_R macros, which are  defined  to  simulate  the  construct  using
        _s_e_t_j_m_p and _l_o_n_g_j_m_p_.  If this emulation does not work, define the symbol
-       FFAAKKEE__TTRRYY  to cause these macros to become "inert."  (In cases where the
-       error is detected by code physically within the body of the ttrryy  state‐
-       ment,  a  C  ggoottoo  to  the rreeccoovveerr section is always generated.)  Also,
+       FFAAKKEE__TTRRYY to cause these macros to become "inert."  (In cases where  the
+       error  is detected by code physically within the body of the ttrryy state‐
+       ment, a C ggoottoo to the rreeccoovveerr  section  is  always  generated.)   Also,
        local file variables in scopes which are destroyed by an eessccaappee are not
        closed.
 
-       Non‐local  GOTO’s  and ttrryy‐rreeccoovveerr statements are each implemented, but
-       may conflict if both are used at once.   Non‐local  GOTO’s  are  fairly
-       careful  about closing files that go out of scope but may fail to do so
+       Non‐local GOTO’s and ttrryy‐rreeccoovveerr statements are each  implemented,  but
+       may  conflict  if  both  are used at once.  Non‐local GOTO’s are fairly
+       careful about closing files that go out of scope but may fail to do  so
        in the presence of recursion.
 
        Arrays containing files are not initialized to NULL as other files are.
-       In  some  cases,  such  as file variables allocated by NEW, the file is
+       In some cases, such as file variables allocated by  NEW,  the  file  is
        initialized but not automatically closed by DISPOSE.
 
-       LINK variables allowing sub‐procedures access to their  parents’  vari‐
-       ables  are  occasionally omitted by mistake, if the access is too indi‐
-       rect for _p_2_c to notice.  If this happens, you can add an explicit  ref‐
-       erence  to  a parent variable in the sub‐procedure.  A statement of the
-       form "a:=a" will count as a reference but then  be  optimized  away  by
+       LINK  variables  allowing sub‐procedures access to their parents’ vari‐
+       ables are occasionally omitted by mistake, if the access is  too  indi‐
+       rect  for _p_2_c to notice.  If this happens, you can add an explicit ref‐
+       erence to a parent variable in the sub‐procedure.  A statement  of  the
+       form  "a:=a"  will  count  as a reference but then be optimized away by
        _p_2_c_.
 
-       Many  aspects of Modula‐2 are translated only superficially.  For exam‐
-       ple, the type‐compatibility properties of the _W_O_R_D and  _A_R_R_A_Y  _O_F  _W_O_R_D
+       Many aspects of Modula‐2 are translated only superficially.  For  exam‐
+       ple,  the  type‐compatibility  properties of the _W_O_R_D and _A_R_R_A_Y _O_F _W_O_R_D
        types are only roughly modelled, as are the scope rules concerning mod‐
        ules.
 
-       Parts of VAX Pascal are still untreated.  In particular,  the  _[_U_N_S_A_F_E_]
-       attribute  and a few others are not fully supported, nor are the seman‐
+       Parts  of  VAX Pascal are still untreated.  In particular, the _[_U_N_S_A_F_E_]
+       attribute and a few others are not fully supported, nor are the  seman‐
        tics of the _O_P_E_N procedure.
 
-       Turbo and VAX Pascal’s _d_o_u_b_l_e_, _q_u_a_d_r_u_p_l_e_, and _e_x_t_e_n_d_e_d real  types  all
+       Turbo  and  VAX Pascal’s _d_o_u_b_l_e_, _q_u_a_d_r_u_p_l_e_, and _e_x_t_e_n_d_e_d real types all
        translate to the C ddoouubbllee type.  Turbo’s _c_o_m_p_u_t_a_t_i_o_n_a_l type is not sup‐
        ported at all.
 
-       Because Pascal strings  (with  length  bytes)  are  translated  into  C
-       strings  (with null terminators), certain Pascal string tricks will not
-       work in the translated code.  For example the  assignment  _s_[_0_]_:_=_c_h_r_(_x_)
-       is  translated  to  _s_[_x_]_=_0  on  the assumption that the string is being
-       shortened.  If _x is actually greater than the current length,  but  not
-       of  a  recognizable form like _o_r_d_(_s_[_0_]_)_+_n_, then the generated code will
-       not work.  In VAX Pascal this corresponds to performing  arithmetic  on
+       Because  Pascal  strings  (with  length  bytes)  are  translated into C
+       strings (with null terminators), certain Pascal string tricks will  not
+       work  in  the translated code.  For example the assignment _s_[_0_]_:_=_c_h_r_(_x_)
+       is translated to _s_[_x_]_=_0 on the assumption  that  the  string  is  being
+       shortened.   If  _x is actually greater than the current length, but not
+       of a recognizable form like _o_r_d_(_s_[_0_]_)_+_n_, then the generated  code  will
+       not  work.   In VAX Pascal this corresponds to performing arithmetic on
        the _L_E_N_G_T_H field of a varying‐length string.
 
-       Turbo  Pascal’s  automatic  clipping  of  strings is not supported.  In
-       Turbo, if a ten character string is assigned to a  _s_t_r_i_n_g_[_8_]  variable,
+       Turbo Pascal’s automatic clipping of  strings  is  not  supported.   In
+       Turbo,  if  a ten character string is assigned to a _s_t_r_i_n_g_[_8_] variable,
        the last two characters are silently removed.  The code produced by _p_2_c
        generally will overrun the target string instead!  The SSttrriinnggTTrruunnccLLiimmiitt
-       parameter  (80  by  default  if LLaanngguuaaggee=TTuurrbboo) specifies a string size
-       which should be considered  "short";  assignments  of  potentially‐long
-       strings  to  short  string  variables will cause a warning but will not
-       automatically truncate.  The cure is to use _c_o_p_y in the  Pascal  source
+       parameter (80 by default if LLaanngguuaaggee=TTuurrbboo)  specifies  a  string  size
+       which  should  be  considered  "short"; assignments of potentially‐long
+       strings to short string variables will cause a  warning  but  will  not
+       automatically  truncate.   The cure is to use _c_o_p_y in the Pascal source
        to truncate the strings explicitly.
 
 FFIILLEESS
-       file._x_x_x                                                   Pascal
-       source files
-       file.c                                                     resulting  C
-       source file
-       module.h                                                   resulting  C
-       header file
-       p2crc                                                      local   con‐
-       figuration file
-       .p2crc                                                     alternate
-       local configuration file
-       /Users/schneidt/now/p2c/test/p2c‐1.21alpha2/home/p2crc     system‐wide
-       configuration file
-       /Users/schneidt/now/p2c/test/p2c‐1.21alpha2/home/system.impdeclarations
-       for predefined functions
-       /Users/schneidt/now/p2c/test/p2c‐1.21alpha2/home/system.m2 analogous
-       declarations for Modula‐2
-       /Users/schneidt/now/p2c/test/p2c‐1.21alpha2/home/*.imp     interface
-       text for standard modules
-       /Users/schneidt/now/p2c/test/p2c‐1.21alpha2/home/p2c/p2c.h header  file
-       for translated programs
-       /Users/schneidt/now/p2c/test/p2c‐1.21alpha2/home/libp2c.a  run‐time
-       library
+       file._x_x_x                                   Pascal source files
+       file.c                                     resulting C source file
+       module.h                                   resulting C header file
+       p2crc                                      local configuration file
+       .p2crc                                     alternate  local  configura‐
+       tion file
+       /Users/reneeverly/repos/p2c/home/p2crc     system‐wide    configuration
+       file
+       /Users/reneeverly/repos/p2c/home/system.impdeclarations for  predefined
+       functions
+       /Users/reneeverly/repos/p2c/home/system.m2 analogous  declarations  for
+       Modula‐2
+       /Users/reneeverly/repos/p2c/home/*.imp     interface text for  standard
+       modules
+       /Users/reneeverly/repos/p2c/home/p2c/p2c.h header  file  for translated
+       programs
+       /Users/reneeverly/repos/p2c/home/libp2c.a  run‐time library
 
 AAUUTTHHOORR
        Dave Gillespie, daveg@synaptics.com.

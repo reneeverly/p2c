@@ -13,6 +13,9 @@
 
 #include <stdio.h>
 
+// WREN
+#include <string.h>
+
 
 
 /* If the following heuristic fails, compile -DBSD=0 for non-BSD systems,

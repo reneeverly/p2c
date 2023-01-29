@@ -10,6 +10,9 @@
 #include <ctype.h>
 #include <time.h>
 
+// WREN
+#include <stdlib.h>
+
 #ifdef M_XENIX
 # define BSD 0
 #endif
