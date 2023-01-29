@@ -1,4 +1,9 @@
+## Changelog
 
+* Made changes so that it would build on MacOS Monterey
+
+## Original README
+```
 This directory contains "p2c" version 1.21alpha-07.Dec.93, a Pascal to C translator.
 
 "p2c"  Copyright 1989, 1990, 1991, 1992, 1993  Free Software Foundation, Inc.
@@ -134,4 +139,4 @@ allocation.  Some data structures are allocated but never freed.  Profiles
 show that the waste is not too great in most cases, but if it is a problem
 you may have to write a garbage collector (this shouldn't be too hard if you
 only run the collector after translating each procedure).
-
+```
